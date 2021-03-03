@@ -1,1 +1,3 @@
 # Digit-Recognition
+
+DIGIT RECOGNIZER (MNIST dataset) : I have implemented this dataset using CNN in Tensorflow. I have used 2 Convolution layers and 2 MaxPooling layers. Images which are initially flattened and are of 784 pixels are then converted to 2D image of 28*28 pixels.After passing through convolution and maxpooling layers we then flattten it again and pass through a dense layer to bring some uncertainity. Further we pass it through a dropout layer which makes some units inactive and has keep_probability of 0.8 It is done for Regularisation and helps to avoid overfitting of data. Further it goes to our output layer which gives output as labels of 0-9. Using argmax we get the argument no. of max value and hence it is our predicted number.
